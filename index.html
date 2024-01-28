@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY travel history</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.BgSwitcher/0.4.3/jquery.bgswitcher.min.js" integrity="sha512-cwDh42ooq48+o2kkbsn72Kwd9/Ghc34d48DFlNfOCRFJ1dM6EeIFs9d7PIBa4SSv6enwQAYmxsLZGgKOV0yE1A==" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="g-navi">
+      <div class="container nav-wrapper">
+        <ul>
+          <li class="nav-item"><a href="#spot">Travel Spots</a></li>
+          <li class="nav-item"><a href="#request">Request</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="g-navi-sp">
+      <div class="sp-logo">
+        <p class="logo-title">MY travel history</p>
+      </div>
+      <div class="menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  <section id="main-visual">
+    <div class="container mv-wrapper">
+      <div class="mv-right">
+        <h1>MY travel history</h1>
+        <p class="text">～広島編～</p>
+      </div>
+    </div>
+  </section>
+  <section id="spot">
+    <div class="container">
+      <div class="title">
+        <h2>Travel Spots</h2>
+        <span class="ja-title">訪れた場所</span>
+      </div>
+      <div class="spot-wrapper">
+        <div class="spot-type">
+          <a href="" class="modalopen" data-target="modal01">
+            <img class="spot-img" src="./image/hill.png" alt="未来心の丘">
+            <p class="spot-name">未来心の丘</p>
+          </a>
+        </div>
+        <div class="modal-main js-modal" id="modal01">
+          <div class="modal-inner">
+            <div class="inner-content">
+              <p class="inner-title">未来心の丘</p>
+              <img src="./image/hill2.png" alt="未来心の丘" class="image-modal">
+              <p class="inner-text">未来心の丘/耕三寺</p>
+              <address>
+                <p>〒722-2411<br>
+                  広島県尾道市瀬戸田町瀬戸田５５３－２<br>
+                  TEL:<a class="spot-address" href="tel:0845270800">0845-27-0800</a></p>
+              </address>
+              <a class="send-button modalClose">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="spot-type">
+          <a href="" class="modalopen" data-target="modal02">
+            <img class="spot-img" src="./image/mt.png" alt="白滝山">
+            <p class="spot-name">白滝山</p>
+          </a>
+        </div>
+        <div class="modal-main js-modal" id="modal02">
+          <div class="modal-inner">
+            <div class="inner-content">
+              <p class="inner-title">白滝山</p>
+              <img src="./image/mt2.png" alt="白滝山" class="image-modal">
+              <p class="inner-text">白滝山</p>
+              <address>
+                <p>〒722-2102<br>
+                  広島県尾道市因島重井町<br>
+                  TEL:<a class="spot-address" href="tel:0845250016">0845-25-0016</a></p>
+              </address>
+              <a class="send-button modalClose">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="spot-type">
+          <a href="" class="modalopen" data-target="modal03">
+            <img class="spot-img" src="./image/shrine.png" alt="厳島神社">
+            <p class="spot-name">厳島神社</p>
+          </a>
+        </div>
+        <div class="modal-main js-modal" id="modal03">
+          <div class="modal-inner">
+            <div class="inner-content">
+              <p class="inner-title">厳島神社</p>
+              <img src="./image/shrine2.png" alt="厳島神社" class="image-modal">
+              <address>
+                <p>〒739-0588<br>
+                  広島県廿日市市宮島町１－１<br>
+                  TEL:<a class="spot-address" href="tel:0829442020">0829-44-2020</a></p>
+              </address>
+              <a class="send-button modalClose">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="spot-type">
+          <a href="" class="modalopen" data-target="modal04">
+            <img class="spot-img" src="./image/aqua.png" alt="宮島水族館">
+            <p class="spot-name">宮島水族館</p>
+          </a>
+        </div>
+        <div class="modal-main js-modal" id="modal04">
+          <div class="modal-inner">
+            <div class="inner-content">
+              <p class="inner-title">宮島水族館</p>
+              <img src="./image/aqua2.png" alt="宮島水族館" class="image-modal">
+              <address>
+                <p>〒739-0588<br>
+                広島県廿日市市宮島町１０－３<br>
+                TEL:<a class="spot-address" href="tel:0829442010">0829-44-2010</a></p>
+              </address>
+              <a class="send-button modalClose">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="request">
+    <div class="container">
+      <div class="title">
+        <h2>Request</h2>
+        <span class="ja-title">アンケートのお願い</span>
+      </div>
+      <form action="index.php" method="post">
+        <div class="rq-block">
+          <label class="request-text">エリア</label>
+          <div class="rp-select">
+            <select name="area-request" required>
+              <option value="" hidden>ご選択ください</option>
+              <option value="1">北海道</option>
+              <option value="2">東北</option>
+              <option value="3">関東</option>
+              <option value="4">中部</option>
+              <option value="5">近畿</option>
+              <option value="6">中国</option>
+              <option value="7">四国</option>
+              <option value="8">九州沖縄</option>
+            </select>
+          </div>
+        </div>
+        <div class="rq-block">
+          <label class="request-text" for="pref">都道府県</label>
+          <input type="text" name="pref" placeholder="例：東京都" id="pref" class="form-pref">
+        </div>
+        <div class="rq-block">
+          <label class="request-text" for="request-about">内容</label>
+          <textarea name="request-about" id="request-about" cols="60" rows="6" placeholder="ここに記入して下さい"></textarea>
+        </div>
+        <div class="rq-block">
+          <input class="send-button" type="submit" value="送信">
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo-wrapper">
+          <a href="#" class="logo">MY travel history</a>
+          <div class="sns-block">
+            <a class="mark" href="https://twitter.com/" target="_blank">𝕏</a>
+            <a class="mark" href="https://www.facebook.com/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a class="mark" href="https://www.instagram.com/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#spot">Travel Spots</a></li>
+            <li><a href="#request">Request</a></li>
+          </ul>
+        </div>
+        <div class="menu policy">
+          <ul>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">特定商取引法について</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </div>
+      <small>Copyright © 2024 ammi SAMPLE inc. All Rights Reserved.</small>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,537 @@
+@charset "UTF-8";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #624649;
+  font-size: 1rem;
+  font-family: "YuGothic", Yu Gothic, sans-serif;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+a:hover {
+  transition: 0.6s;
+}
+
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.g-navi {
+  position: absolute;
+  background-color: #97b9e0;
+  width: 100%;
+}
+
+.g-navi ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.g-navi ul li {
+  flex-basis: 16.6%;
+  text-align: center;
+}
+
+.g-navi ul li a {
+  display: block;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.g-navi ul li a:hover {
+  color: #ccc;
+  background-color: #5b7f9b;
+  opacity: 0.5;
+}
+
+#main-visual {
+  /* background-image: url(../image/mt2.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 633px;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  color: #7d5c30;
+  font-weight: normal;
+  text-shadow: 0px 0px 10px #fff;
+  filter: drop-shadow(10px 5px 10px #fff);
+}
+
+.mv-wrapper {
+  position: relative;
+}
+
+.mv-right {
+  position: absolute;
+  top: 400px;
+  right: 0;
+  max-width: 100%;
+}
+
+.text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.625rem;
+  letter-spacing: 4px;
+  color: #7d5c30;
+  text-align: center;
+  filter: drop-shadow(4px 2px 4px #fff);
+  text-shadow: 0px 0px 4px #fff;
+  margin-bottom: 80px;
+}
+
+#spot,
+#request {
+  padding: 80px 0;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: #5b7f9b;
+}
+
+.ja-title {
+  font-size: 1rem;
+  color: #5b7f9b;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.box-design {
+  background-color: #fff;
+}
+
+.spot-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#spot {
+  background: linear-gradient(#dfdfdf, #fff);
+}
+
+.spot-type {
+  text-align: center;
+}
+
+.spot-img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.spot-type a {
+  display: block;
+  padding: 10px;
+  color: #333;
+}
+
+.spot-type a:hover {
+  color: #955E64;
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
+}
+
+.modal-main {
+  display: none;
+}
+
+.modal-inner {
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: #666666;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.inner-content {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  max-width: 1024px;
+}
+
+.modal-inner img {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.inner-title {
+  margin-top: 150px;
+  margin-bottom: 32px;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.inner-text {
+  font-size: 1.6rem;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+address {
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+.spot-address {
+  color: #624649;
+}
+
+.modalClose {
+  cursor: pointer;
+}
+
+#request {
+  background: #e4f1ff;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.rq-block {
+  margin-bottom: 32px;
+}
+
+.request-text {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-pref,
+.rp-select select {
+  border: 1px solid #b1b1b1;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  background: #fff;
+}
+
+textarea {
+  border: 1px solid #b1b1b1;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.rp-select {
+  position: relative;
+  border: 1px solid #b1b1b1;
+  background: #fff;
+}
+
+.rp-select::before {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  content: '';
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 13px solid #666;
+}
+
+.rp-select select {
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 10px 40px 10px 10px;
+}
+
+.rp-select select::-ms-expand {
+  display: none;
+}
+
+.send-button {
+  display: block;
+  background-color: #5b7f9b;
+  font-size: 1.375rem;
+  padding: 10px 120px;
+  margin: 0 auto;
+  color: #fff;
+  transition: 0.6s;
+}
+
+.send-button:hover {
+  background-color: #fff;
+  color: #5b7f9b;
+  transition: 0.6s;
+}
+
+footer {
+  background: #97b9e0;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.footer-content a {
+  color: #fff;
+}
+
+.footer-content a:hover {
+  color: #7d5c30;
+}
+
+.logo-wrapper {
+  flex-grow: 2;
+}
+
+.menu {
+  flex-grow: 1;
+}
+
+.logo {
+  display: block;
+  font-size: 3rem;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+}
+
+.sns-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mark {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.menu ul li {
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+footer small {
+  padding-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .g-navi {
+    transform: translateY(-100%);
+    transition: .5s ease-in-out;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    padding-top: 60px;
+    height: 100vh;
+  }
+
+  .g-navi ul {
+    display: block;
+  }
+
+  .g-navi.active {
+    transform: translateY(0%);
+    transition: .5s ease-in-out;
+  }
+
+  .g-navi-sp {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #97b9e0;
+    width: 100%;
+    height: 60px;
+    padding: 4%;
+    z-index: 3;
+  }
+
+  .sp-logo {
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .menu-trigger {
+    position: relative;
+    width: 30px;
+    height: 42px;
+    cursor: pointer;
+  }
+
+  .menu-trigger span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #fff;
+    border-radius: 3px;
+    transition: .35s ease-in-out;
+  }
+
+  .menu-trigger span:nth-child(1) {
+    top: 6px;
+  }
+
+  .menu-trigger span:nth-child(2) {
+    top: 18px;
+  }
+
+  .menu-trigger span:nth-child(3) {
+    top: 30px;
+  }
+
+  .menu-trigger.active span:nth-child(1) {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+
+  .menu-trigger.active span:nth-child(2),
+  .menu-trigger.active span:nth-child(3) {
+    top: 18px;
+    transform: rotate(45deg);
+  }
+
+  #main-visual {
+    /* background-image: url(../image/sp/mt.png); */
+    height: 500px;
+    max-height: inherit;
+    padding-top: 60px;
+  }
+
+  .mv-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  #spot,
+  #request {
+    padding: 60px 0;
+  }
+
+  .mv-right {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
+  .text {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+
+  .spot-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .spot-type {
+    flex-basis: 47%;
+    margin-bottom: 20px;
+  }
+
+  .spot-type a {
+    padding: 0;
+  }
+
+  .inner-title {
+    margin-top: 40px;
+  }
+
+  address {
+    line-height: 2.4;
+  }
+
+  .footer-content {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .logo-wrapper {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+
+  .logo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .sns-block {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .menu {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .menu:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu ul li {
+    margin-bottom: 10px;
+  }
+}
