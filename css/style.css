@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* 共通パーツ */
 html {
   font-size: 16px;
 }
@@ -31,44 +32,6 @@ a:hover {
   margin: 0 auto;
 }
 
-.g-navi {
-  position: absolute;
-  background-color: #97b9e0;
-  width: 100%;
-}
-
-.g-navi ul {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.g-navi ul li {
-  flex-basis: 16.6%;
-  text-align: center;
-}
-
-.g-navi ul li a {
-  display: block;
-  color: #fff;
-  padding: 20px 0;
-}
-
-.g-navi ul li a:hover {
-  color: #ccc;
-  background-color: #5b7f9b;
-  opacity: 0.5;
-}
-
-#main-visual {
-  /* background-image: url(../image/mt2.png); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  max-height: 633px;
-}
-
 h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 4rem;
@@ -77,28 +40,6 @@ h1 {
   font-weight: normal;
   text-shadow: 0px 0px 10px #fff;
   filter: drop-shadow(10px 5px 10px #fff);
-}
-
-.mv-wrapper {
-  position: relative;
-}
-
-.mv-right {
-  position: absolute;
-  top: 400px;
-  right: 0;
-  max-width: 100%;
-}
-
-.text {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.625rem;
-  letter-spacing: 4px;
-  color: #7d5c30;
-  text-align: center;
-  filter: drop-shadow(4px 2px 4px #fff);
-  text-shadow: 0px 0px 4px #fff;
-  margin-bottom: 80px;
 }
 
 #spot,
@@ -125,8 +66,73 @@ h2 {
   margin-bottom: 40px;
 }
 
-.box-design {
-  background-color: #fff;
+/* グローバルナビゲーション */
+.g-navi {
+  position: absolute;
+  background-color: #97b9e0;
+  width: 100%;
+}
+
+.g-navi ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.g-navi ul li {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.g-navi ul li a {
+  display: block;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* 「メニューテキスト」にマウスオンした際のデザイン */
+.g-navi ul li a:hover {
+  color: #ccc;
+  background-color: #5b7f9b;
+  opacity: 0.5;
+}
+
+/* ファーストビュー */
+#main-visual {
+  /* background-image: url(../image/hill2.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 633px;
+}
+
+/* メインビジュアル */
+.mv-wrapper {
+  position: relative;
+}
+
+.mv-right {
+  position: absolute;
+  top: 400px;
+  right: 0;
+  max-width: 100%;
+}
+
+.text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.625rem;
+  letter-spacing: 4px;
+  color: #7d5c30;
+  text-align: center;
+  filter: drop-shadow(4px 2px 4px #fff);
+  text-shadow: 0px 0px 4px #fff;
+  margin-bottom: 80px;
+}
+
+/* Travel Spotsエリア */
+#spot {
+  background: linear-gradient(#dfdfdf, #fff);
 }
 
 .spot-wrapper {
@@ -135,11 +141,7 @@ h2 {
   justify-content: space-between;
 }
 
-#spot {
-  background: linear-gradient(#dfdfdf, #fff);
-}
-
-.spot-type {
+.spot-area {
   text-align: center;
 }
 
@@ -148,17 +150,18 @@ h2 {
   margin-bottom: 5px;
 }
 
-.spot-type a {
+.spot-area a {
   display: block;
   padding: 10px;
   color: #333;
 }
 
-.spot-type a:hover {
+.spot-area a:hover {
   color: #955E64;
   box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
 }
 
+/* モーダルのスタイル */
 .modal-main {
   display: none;
 }
@@ -216,10 +219,11 @@ address {
   color: #624649;
 }
 
-.modalClose {
+.modal-close {
   cursor: pointer;
 }
 
+/* Requestエリア */
 #request {
   background: #e4f1ff;
 }
@@ -239,7 +243,7 @@ form {
   margin-bottom: 10px;
 }
 
-.form-pref,
+#pref,
 .rp-select select {
   border: 1px solid #b1b1b1;
   width: 100%;
@@ -283,10 +287,6 @@ textarea {
   padding: 10px 40px 10px 10px;
 }
 
-.rp-select select::-ms-expand {
-  display: none;
-}
-
 .send-button {
   display: block;
   background-color: #5b7f9b;
@@ -303,6 +303,7 @@ textarea {
   transition: 0.6s;
 }
 
+/* フッター */
 footer {
   background: #97b9e0;
   color: #fff;
@@ -332,6 +333,7 @@ footer {
   flex-grow: 1;
 }
 
+/* ロゴ */
 .logo {
   display: block;
   font-size: 3rem;
@@ -363,11 +365,26 @@ footer small {
 }
 
 @media screen and (max-width:768px) {
+
+  /* 共通パーツ */
   body {
     overflow-x: hidden;
   }
 
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  #spot,
+  #request {
+    padding: 60px 0;
+  }
+
+  /* ヘッダー */
   .g-navi {
+    /* display: none; */
     transform: translateY(-100%);
     transition: .5s ease-in-out;
     display: block;
@@ -398,6 +415,7 @@ footer small {
     z-index: 3;
   }
 
+  /* ロゴエリア */
   .sp-logo {
     font-size: 1.5rem;
     color: #fff;
@@ -405,6 +423,7 @@ footer small {
     font-family: 'Cormorant Garamond', serif;
   }
 
+  /* ハンバーガーメニュー */
   .menu-trigger {
     position: relative;
     width: 30px;
@@ -444,8 +463,9 @@ footer small {
     transform: rotate(45deg);
   }
 
+  /* メインビジュアル */
   #main-visual {
-    /* background-image: url(../image/sp/mt.png); */
+    /* background-image: url(../image/sp/hill.png); */
     height: 500px;
     max-height: inherit;
     padding-top: 60px;
@@ -458,17 +478,6 @@ footer small {
     height: 100%;
   }
 
-  h1 {
-    font-size: 2.5rem;
-    letter-spacing: 3px;
-    text-align: center;
-  }
-
-  #spot,
-  #request {
-    padding: 60px 0;
-  }
-
   .mv-right {
     position: relative;
     top: 0;
@@ -477,20 +486,20 @@ footer small {
 
   .text {
     font-size: 1rem;
-    margin-bottom: 30px;
     letter-spacing: 2px;
   }
 
+  /* Travel Spotsエリア */
   .spot-wrapper {
     flex-wrap: wrap;
   }
 
-  .spot-type {
+  .spot-area {
     flex-basis: 47%;
     margin-bottom: 20px;
   }
 
-  .spot-type a {
+  .spot-area a {
     padding: 0;
   }
 
@@ -502,6 +511,7 @@ footer small {
     line-height: 2.4;
   }
 
+  /* フッター */
   .footer-content {
     text-align: center;
     flex-wrap: wrap;

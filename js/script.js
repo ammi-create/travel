@@ -1,3 +1,4 @@
+// ハンバーガーメニュー
 $(function () {
   $('.menu-trigger').click(function () {
     $(this).toggleClass('active');
@@ -13,19 +14,11 @@ $(function () {
   });
 });
 
+// スライドショー
 $(window).on('load resize', function () {
   var winW = $(window).width();
   var devW = 768;
-  if (winW <= devW) {
-    $(function () {
-      $('#main-visual').bgSwitcher({
-        images: ['./image/sp/hill.png', './image/sp/mt.png', './image/sp/shrine.png', './image/sp/aqua.png'],
-        interval: 3000,
-        loop: true,
-        effect: 'fade'
-      });
-    });
-  } else {
+  if (winW > devW) {
     $(function () {
       $('#main-visual').bgSwitcher({
         images: ['./image/hill2.png', './image/mt2.png', './image/shrine2.png', './image/aqua2.png'],
@@ -34,21 +27,30 @@ $(window).on('load resize', function () {
         effect: 'fade'
       });
     });
+  } else {
+    $(function () {
+      $('#main-visual').bgSwitcher({
+        images: ['./image/sp/hill.png', './image/sp/mt.png', './image/sp/shrine.png', './image/sp/aqua.png'],
+        interval: 3000,
+        loop: true,
+        effect: 'fade'
+      });
+    });
   }
 });
 
+// モーダル機能
 $(function () {
   $('.modalopen').each(function () {
     $(this).on('click', function () {
       var target = $(this).data('target');
       var modal = document.getElementById(target);
-      console.log(modal);
       $(modal).fadeIn();
       return false;
-    })
-  })
-  $('.modalClose').on('click', function () {
+    });
+  });
+  $('.modal-close').on('click', function () {
     $('.js-modal').fadeOut();
     return false;
-  })
-})
+  });
+});

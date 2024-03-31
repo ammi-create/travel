@@ -2,15 +2,16 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MY travel history</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- googlefonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
   <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.BgSwitcher/0.4.3/jquery.bgswitcher.min.js" integrity="sha512-cwDh42ooq48+o2kkbsn72Kwd9/Ghc34d48DFlNfOCRFJ1dM6EeIFs9d7PIBa4SSv6enwQAYmxsLZGgKOV0yE1A==" crossorigin="anonymous"></script>
   <script src="./js/script.js"></script>
 </head>
@@ -18,6 +19,7 @@
   <header>
     <nav class="g-navi">
       <div class="container nav-wrapper">
+        <!-- グローバルナビゲーション -->
         <ul>
           <li class="nav-item"><a href="#spot">Travel Spots</a></li>
           <li class="nav-item"><a href="#request">Request</a></li>
@@ -28,6 +30,7 @@
       <div class="sp-logo">
         <p class="logo-title">MY travel history</p>
       </div>
+      <!-- ハンバーガーメニュー -->
       <div class="menu-trigger">
         <span></span>
         <span></span>
@@ -45,17 +48,21 @@
   </section>
   <section id="spot">
     <div class="container">
+      <!-- エリアタイトル -->
       <div class="title">
         <h2>Travel Spots</h2>
         <span class="ja-title">訪れた場所</span>
       </div>
+      <!-- ボックス内の要素を定義 -->
       <div class="spot-wrapper">
-        <div class="spot-type">
-          <a href="" class="modalopen" data-target="modal01">
+        <!-- 1-未来心の丘 -->
+        <div class="spot-area">
+          <a href="#" class="modalopen" data-target="modal01">
             <img class="spot-img" src="./image/hill.png" alt="未来心の丘">
             <p class="spot-name">未来心の丘</p>
           </a>
         </div>
+        <!-- 1つ目のモーダルの中身 -->
         <div class="modal-main js-modal" id="modal01">
           <div class="modal-inner">
             <div class="inner-content">
@@ -67,16 +74,18 @@
                   広島県尾道市瀬戸田町瀬戸田５５３－２<br>
                   TEL:<a class="spot-address" href="tel:0845270800">0845-27-0800</a></p>
               </address>
-              <a class="send-button modalClose">Close</a>
+              <a class="send-button modal-close">Close</a>
             </div>
           </div>
         </div>
-        <div class="spot-type">
+        <!-- 2-白滝山 -->
+        <div class="spot-area">
           <a href="" class="modalopen" data-target="modal02">
             <img class="spot-img" src="./image/mt.png" alt="白滝山">
             <p class="spot-name">白滝山</p>
           </a>
         </div>
+        <!-- 2つ目のモーダルの中身 -->
         <div class="modal-main js-modal" id="modal02">
           <div class="modal-inner">
             <div class="inner-content">
@@ -88,47 +97,53 @@
                   広島県尾道市因島重井町<br>
                   TEL:<a class="spot-address" href="tel:0845250016">0845-25-0016</a></p>
               </address>
-              <a class="send-button modalClose">Close</a>
+              <a class="send-button modal-close">Close</a>
             </div>
           </div>
         </div>
-        <div class="spot-type">
+        <!-- 3-厳島神社 -->
+        <div class="spot-area">
           <a href="" class="modalopen" data-target="modal03">
             <img class="spot-img" src="./image/shrine.png" alt="厳島神社">
             <p class="spot-name">厳島神社</p>
           </a>
         </div>
+        <!-- 3つ目のモーダルの中身 -->
         <div class="modal-main js-modal" id="modal03">
           <div class="modal-inner">
             <div class="inner-content">
               <p class="inner-title">厳島神社</p>
               <img src="./image/shrine2.png" alt="厳島神社" class="image-modal">
+              <p class="inner-text">厳島神社　鳥居</p>
               <address>
                 <p>〒739-0588<br>
                   広島県廿日市市宮島町１－１<br>
                   TEL:<a class="spot-address" href="tel:0829442020">0829-44-2020</a></p>
               </address>
-              <a class="send-button modalClose">Close</a>
+              <a class="send-button modal-close">Close</a>
             </div>
           </div>
         </div>
-        <div class="spot-type">
+        <!-- 4-宮島水族館 -->
+        <div class="spot-area">
           <a href="" class="modalopen" data-target="modal04">
             <img class="spot-img" src="./image/aqua.png" alt="宮島水族館">
             <p class="spot-name">宮島水族館</p>
           </a>
         </div>
+        <!-- 4つ目のモーダルの中身 -->
         <div class="modal-main js-modal" id="modal04">
           <div class="modal-inner">
             <div class="inner-content">
               <p class="inner-title">宮島水族館</p>
               <img src="./image/aqua2.png" alt="宮島水族館" class="image-modal">
+              <p class="inner-text">はつこい庵</p>
               <address>
                 <p>〒739-0588<br>
                 広島県廿日市市宮島町１０－３<br>
                 TEL:<a class="spot-address" href="tel:0829442010">0829-44-2010</a></p>
               </address>
-              <a class="send-button modalClose">Close</a>
+              <a class="send-button modal-close">Close</a>
             </div>
           </div>
         </div>
@@ -137,15 +152,17 @@
   </section>
   <section id="request">
     <div class="container">
+      <!-- エリアタイトル -->
       <div class="title">
         <h2>Request</h2>
         <span class="ja-title">アンケートのお願い</span>
       </div>
       <form action="index.php" method="post">
         <div class="rq-block">
-          <label class="request-text">エリア</label>
+          <!-- エリアフォーム -->
+          <label class="request-text" for="area">エリア</label>
           <div class="rp-select">
-            <select name="area-request" required>
+            <select name="area" id="area" required>
               <option value="" hidden>ご選択ください</option>
               <option value="1">北海道</option>
               <option value="2">東北</option>
@@ -159,14 +176,17 @@
           </div>
         </div>
         <div class="rq-block">
+          <!-- 都道府県フォーム -->
           <label class="request-text" for="pref">都道府県</label>
-          <input type="text" name="pref" placeholder="例：東京都" id="pref" class="form-pref">
+          <input type="text" id="pref" name="pref" placeholder="例：東京都">
         </div>
         <div class="rq-block">
+          <!-- 内容フォーム -->
           <label class="request-text" for="request-about">内容</label>
           <textarea name="request-about" id="request-about" cols="60" rows="6" placeholder="ここに記入して下さい"></textarea>
         </div>
         <div class="rq-block">
+          <!-- 送信ボタン -->
           <input class="send-button" type="submit" value="送信">
         </div>
       </form>
@@ -178,6 +198,7 @@
         <div class="logo-wrapper">
           <a href="#" class="logo">MY travel history</a>
           <div class="sns-block">
+            <!-- SNSボックス -->
             <a class="mark" href="https://twitter.com/" target="_blank">𝕏</a>
             <a class="mark" href="https://www.facebook.com/" target="_blank">
               <i class="fab fa-facebook"></i>
@@ -188,12 +209,14 @@
           </div>
         </div>
         <div class="menu">
+          <!-- メニューボックス -->
           <ul>
             <li><a href="#spot">Travel Spots</a></li>
             <li><a href="#request">Request</a></li>
           </ul>
         </div>
-        <div class="menu policy">
+        <div class="menu">
+          <!-- 利用規約ボックス -->
           <ul>
             <li><a href="#">利用規約</a></li>
             <li><a href="#">特定商取引法について</a></li>
@@ -201,7 +224,7 @@
           </ul>
         </div>
       </div>
-      <small>Copyright © 2024 ammi SAMPLE inc. All Rights Reserved.</small>
+      <small><!-- コピーライトテキスト -->Copyright © 2024 ammi SAMPLE inc. All Rights Reserved.</small>
     </div>
   </footer>
 </body>
